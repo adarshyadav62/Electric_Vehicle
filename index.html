@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Vehicle Awareness</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            background-color: #4CAF50;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .ev-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .call-to-action {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+    <!-- ... (previous HTML code) ... -->
+
+<style>
+    /* ... (previous styles) ... */
+
+    form {
+        margin-top: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+    section {
+        margin-bottom: 30px;
+    }
+
+    /* Add a subtle hover effect on images */
+    .ev-image:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* Responsive styling for smaller screens */
+    @media only screen and (max-width: 600px) {
+        main {
+            padding: 10px;
+        }
+
+        nav a {
+            float: none;
+            display: block;
+            text-align: left;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+</style>
+
+<!-- ... (remaining HTML code) ... -->
+<!-- ... (previous HTML code) ... -->
+
+<style>
+    /* ... (previous styles) ... */
+
+    main {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        color: #4CAF50;
+        border-bottom: 2px solid #4CAF50;
+        padding-bottom: 8px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        line-height: 1.6;
+        color: #555;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        margin-bottom: 8px;
+        position: relative;
+        padding-left: 30px;
+    }
+
+    li::before {
+        content: '\2022'; /* Bullet point character */
+        color: #4CAF50;
+        font-weight: bold;
+        font-size: 18px;
+        position: absolute;
+        left: 10px;
+        top: 6px;
+    }
+
+    /* Add a subtle hover effect on list items */
+    li:hover {
+        color: #4CAF50;
+        cursor: pointer;
+    }
+</style>
+<!-- ... (previous HTML code) ... -->
+
+<style>
+    /* ... (previous styles) ... */
+
+    #team {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .team-member {
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    .team-member img {
+        border-radius: 50%;
+        max-width: 100px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .team-member h3 {
+        color: #4CAF50;
+        margin-bottom: 10px;
+    }
+
+    .team-member p {
+        color: #555;
+        line-height: 1.6;
+    }
+</style>
+<!-- ... (previous HTML code) ... -->
+
+<style>
+    /* ... (previous styles) ... */
+
+    #partners {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .partner {
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: #f5f5f5;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    .partner img {
+        max-width: 120px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .partner h3 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .partner p {
+        color: #555;
+        line-height: 1.6;
+    }
+</style>
+<!-- ... (previous HTML code) ... -->
+
+<style>
+    /* ... (previous styles) ... */
+
+    #faqs {
+        margin-top: 30px;
+    }
+
+    .faq {
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #f5f5f5;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    .faq h3 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .faq p {
+        color: #555;
+        line-height: 1.6;
+    }
+</style>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<style>
+    /* ... (previous styles) ... */
+
+    /* Style for the slider container */
+    .swiper-container {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+
+    /* Style for the individual slides */
+    .swiper-slide {
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Optional: Add styles for navigation buttons */
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: #fff;
+    }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lg-thumbnail/dist/lg-thumbnail.min.css">
+<style>
+    /* ... (previous styles) ... */
+
+    /* Style for the gallery container */
+    #gallery {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    /* Style for gallery images */
+    .gallery-item {
+        width: calc(33.33% - 10px);
+        margin-bottom: 10px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s;
+    }
+
+    .gallery-item:hover img {
+        transform: scale(1.1);
+    }
+
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: opacity 0.3s, transform 0.3s;
+        }
+
+        #back-to-top:hover {
+            opacity: 0.8;
+        }
+        h1{
+            color: #fff;
+        }
+</style>
+
+<!-- ... (remaining HTML code) ... -->
+
+<!-- ... (remaining HTML code) ... -->
+
+<!-- ... (remaining HTML code) ... -->
+
+
+<!-- ... (remaining HTML code) ... -->
+
+</head>
+<body>
+
+    <header>
+        <h1>Electric Vehicle</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#Benifit">Benefits</a>
+        <a href="#About">About</a>
+        <a href="#team">Our Team</a>
+        <a href="#partners">Partners</a>
+        <a href="#faqs">FAQs</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url('img1.jpg');">
+                    <!-- Slide 1 content -->
+                </div>
+                 
+                <!-- Add more slides as needed -->
+            </div>
+            <!-- Optional: Add navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <h2>Why Choose Electric Vehicles?</h2>
+    <p>
+        Electric vehicles (EVs) are an eco-friendly and sustainable mode of transportation. They produce fewer emissions,
+        reduce dependence on fossil fuels, and contribute to a cleaner environment.
+    </p>
+
+    <img class="ev-image" src="img2.jpg" alt="Electric Vehicle">
+<section id="Benifit">
+    <h2>Benefits of Electric Vehicles</h2>
+    <ul>
+        <li>Zero Emissions</li>
+        <li>Lower Operating Costs</li>
+        <li>Reduced Air Pollution</li>
+        <li>Energy Efficiency</li>
+        <li>Government Incentives</li>
+    </ul>
+
+    <div class="call-to-action">
+        <p>Join the movement towards a sustainable future! Consider making the switch to an electric vehicle today.</p>
+    </div>
+</section>
+   
+<section   id="About">
+    <h2>About Us</h2>
+    <p>
+        Electric Vehicle Awareness is dedicated to promoting the adoption of electric vehicles for a greener and cleaner planet.
+        Our mission is to raise awareness about the benefits of electric vehicles and encourage sustainable transportation choices.
+    </p>
+</section>
+    
+
+    <!-- ... (previous HTML code) ... -->
+
+<section id="team">
+    <h2>Our Team</h2>
+
+    <div class="team-member">
+        <img src="Adarsh.png" alt="Team Member 1">
+        <h3>Adarsh Yadav
+        </h3>
+        <p>Founder & Environmental Scientist</p>
+        <p>Adarsh is passionate about sustainable living and has dedicated his career to promoting eco-friendly transportation solutions.</p>
+    </div>
+
+    <div class="team-member">
+        <img src="Ashutosh.png" alt="Team Member 2">
+        <h3>Ashutosh Kumar Sonu </h3>
+        <p>Technology Expert</p>
+        <p>Ashutosh is a tech enthusiast with expertise in electric vehicle technologies, contributing to the advancement of EV adoption.</p>
+    </div>
+
+    <div class="team-member">
+        <img src="Mooli.png" alt="Team Member 3">
+        <h3>Mooli Shiva Vardhan  Reddy</h3>
+        <p>Advocacy Specialist</p>
+        <p>Vardhan   is dedicated to advocating for policies that support clean transportation and reduce carbon emissions.</p>
+    </div>
+</section>
+
+<!-- ... (remaining HTML code) ... -->
+
+
+    <!-- ... (previous HTML code) ... -->
+
+<section id="partners">
+    <h2>Our Partners</h2>
+
+    <div class="partner">
+        <img src="logo1.jpeg" alt="Partner 1 Logo">
+        <h3>GreenTech Solutions</h3>
+        <p>Leading provider of sustainable technology solutions, committed to a greener future.</p>
+    </div>
+
+    <div class="partner">
+        <img src="logo2.jpeg" alt="Partner 2 Logo">
+        <h3>Clean Energy Alliance</h3>
+        <p>Collaborating to accelerate the transition to clean and renewable energy sources.</p>
+    </div>
+
+    <div class="partner">
+        <img src="logo3.jpeg" alt="Partner 3 Logo">
+        <h3>Global Environmental Foundation</h3>
+        <p>Working towards global environmental conservation through innovative initiatives.</p>
+    </div>
+
+    <!-- Add more partner organizations as needed -->
+
+</section>
+
+<!-- ... (remaining HTML code) ... -->
+
+
+    <!-- ... (previous HTML code) ... -->
+
+<section id="faqs">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq">
+        <h3>Are electric vehicles more expensive?</h3>
+        <p>No, the cost of electric vehicles has been decreasing, and there are often government incentives and rebates available.</p>
+    </div>
+
+    <div class="faq">
+        <h3>How far can electric vehicles travel on a single charge?</h3>
+        <p>The range varies by model, but many modern electric vehicles can travel over 200 miles on a single charge.</p>
+    </div>
+
+    <div class="faq">
+        <h3>What charging infrastructure is available for electric vehicles?</h3>
+        <p>Charging infrastructure is continually expanding. Public charging stations, home charging units, and workplace charging are becoming more prevalent.</p>
+    </div>
+
+    <div class="faq">
+        <h3>Are electric vehicles suitable for long trips?</h3>
+        <p>Yes, many electric vehicles are designed for long-distance travel. Charging infrastructure and battery technology improvements make long trips feasible.</p>
+    </div>
+
+    <div class="faq">
+        <h3>How long does it take to charge an electric vehicle?</h3>
+        <p>Charging times vary, but fast-charging stations can provide a significant charge in about 30 minutes, while home charging may take several hours.</p>
+    </div>
+
+    <!-- Add more FAQ items as needed -->
+
+</section>
+<div id="gallery" class="lg-container">
+    <div class="gallery-item" data-src="gallery-image1.jpg">
+        <img src="img5.jpg" alt="Gallery Image 1">
+    </div>
+    <div class="gallery-item" data-src="gallery-image2.jpg">
+        <img src="img14.jpg" alt="Gallery Image 2">
+    </div>
+    <div class="gallery-item" data-src="gallery-image2.jpg">
+        <img src="img9.jpg" alt="Gallery Image 2">
+    </div>
+    <div class="gallery-item" data-src="gallery-image2.jpg">
+        <img src="img15.jpg" alt="Gallery Image 2">
+    </div>
+    <div class="gallery-item" data-src="gallery-image2.jpg">
+        <img src="img17.jpg" alt="Gallery Image 2">
+    </div>
+    <div class="gallery-item" data-src="gallery-image2.jpg">
+        <img src="img18.jpg" alt="Gallery Image 2">
+    </div>
+</div>
+
+    <div class="call-to-action">
+        <p>Ready to make a positive change? Explore the benefits of electric vehicles and join us in creating a sustainable future.</p>
+    </div>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>
+                Have questions or want to get involved in our cause? Feel free to reach out to us.
+            </p>
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" style="background-color: #4CAF50; color: #fff; padding: 10px 20px; border: none; border-radius: 5px;">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Electric Vehicle Awareness. All rights reserved.</p>
+    </footer>
+    <div id="back-to-top" onclick="scrollToTop()">Back to Top</div>
+    <script>
+        window.onscroll = function () {
+            showBackToTopButton();
+        };
+
+        function showBackToTopButton() {
+            var button = document.getElementById("back-to-top");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            var currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+            if (currentPosition > 0) {
+                window.requestAnimationFrame(scrollToTop);
+                window.scrollTo(0, currentPosition - currentPosition / 8);
+            }
+        }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var gallery = document.getElementById('gallery');
+            lightGallery(gallery, { 
+                thumbnail: true,
+                animateThumb: false,
+                showThumbByDefault: false,
+            });
+        });
+    </script>
+     <script src="https://cdn.jsdelivr.net/npm/lightgallery/dist/js/lightgallery.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/lg-thumbnail/dist/lg-thumbnail.min.js"></script>
+ 
+</body>
+</html>
+
+</body>
+</html>
